@@ -2,6 +2,7 @@
 langchain
 llama-index
 haystack
+langchain_openai
 
 #For a backend serevr
 fastapi
@@ -11,4 +12,5 @@ uvicorn
 requests
 python-dotenv
 gunicorn
+
 
