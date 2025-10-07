@@ -15,7 +15,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 def get_bot_response(message):
-    url = "http://127.0.0.1:8000/chat"   # FastAPI backend URL
+    url = "https://innerbloom-2.onrender.com"  # FastAPI backend URL
     payload = {
         "session_id": st.session_state.session_id,
         "query": message
@@ -37,3 +37,4 @@ if user_input := st.chat_input("Type your message..."):
 for msg in st.session_state.messages:
     with st.chat_message("user" if msg["role"] == "user" else "assistant"):
         st.markdown(msg["content"])
+
