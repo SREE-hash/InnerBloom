@@ -10,3 +10,4 @@ unicorn
 #Additional tools
 requests
 python-dotenv
+gunicorn
