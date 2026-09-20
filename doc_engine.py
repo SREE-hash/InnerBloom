@@ -4,7 +4,7 @@ from llama_index.llms.openai import OpenAI as LlamaOpenAI
 
 # Load API key from environment
 llama_llm = LlamaOpenAI(
-    model="mistralai/mistral-7b-instruct:free",
+    model="gpt-3.5-turbo",
     api_key=os.getenv("OPENROUTER_API_KEY")
 )
 
